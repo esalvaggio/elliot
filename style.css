@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+.box {
+	transition: opacity 0.7s ease;
+	border-radius: 30px;
+}
+
+.box:nth-child(1),
+.box:nth-child(5),
+.box:nth-child(6) {
+  flex-basis: 22.22%;
+}
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4) {
+  flex-basis: 11.11%;
+}
+.box:nth-child(1),
+.box:nth-child(6) {
+	background-color: #FF9F13;
+}
+.box:nth-child(2),
+.box:nth-child(5) {
+	background-color: #FFBF61;
+}
+.box:nth-child(3) {
+	background-color: #FFE1B5;
+}
+.eyedot{
+	background-color: white;
+    width: 100%;
+    height: 18%;
+    border-radius: 30px;
+}
+.eyeleg{
+	background-color: #FFCE85;
+    width: 100%;
+    height: 82%;
+    border-radius: 30px;
+}
+.eyeleg, .eyedot {
+	transition: opacity 0.55s ease;
+}
+.eyedot:hover {
+	background-color: red;
+	animation: redAnimation 3s forwards;
+}
+.box:nth-child(1):hover,
+.box:nth-child(2):hover,
+.box:nth-child(3):hover,
+.box:nth-child(5):hover,
+.box:nth-child(6):hover,
+.eyeleg:hover {
+  opacity: 0.8;
+  animation: opacityAnimation .7s forwards;
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes redAnimation {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: white;
+  }
+}
