@@ -9,7 +9,7 @@ html, body {
 }
 .first {
   padding-top: 10px;
-  font-size: 7vh
+  font-size: 7vw;
 }
 .container {
   display: flex;
@@ -84,10 +84,7 @@ html, body {
 }
 @keyframes redAnimation {
   0% {
-    background-color: white;
-  }
-  50% {
-    background-color: red;
+    background-color: #d13636;
   }
   100% {
     background-color: white;
