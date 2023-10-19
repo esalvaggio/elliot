@@ -1,12 +1,20 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: black;
+  background-color: #ce9835;
 }
-
+.more {
+    text-align: center;
+    color: #271717;
+}
+.first {
+  padding-top: 10px;
+  font-size: 7vh
+}
 .container {
   display: flex;
-  height: 100%;
+  height: 10%;
+  padding: 10px;
 }
 .box {
 	transition: opacity 0.7s ease;
@@ -35,7 +43,7 @@ html, body {
 	background-color: #FFE1B5;
 }
 .eyedot{
-	background-color: white;
+	background-color: #d13636;
     width: 100%;
     height: 18%;
     border-radius: 30px;
