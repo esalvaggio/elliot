@@ -35,6 +35,11 @@ center {
   display: flex;
   justify-content: center
 }
+.pageText{
+  justify-content: flex-start;
+  padding-left: 10px;
+  text-align: left;
+}
 .buttons {
   align-items: center;
   display: flex;
