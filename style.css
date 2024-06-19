@@ -10,11 +10,39 @@ html, body {
 }
 .box {
 	transition: opacity 0.7s ease;
-	/*border-radius: 30px;*/
 }
 .text {
   padding: 20px;
-  font-family: "Univers LT Std";
+  font-family: monospace;
+}
+button {
+  margin-top: 10px;
+  border-radius: 2px;
+  border-width: 1px;
+  background-color: #ecece7;
+  border: 1px solid black;
+  font-family: Arial;
+  font-size: 13px;
+}
+button:hover {
+  background-color: #e5e5e2;
+}
+
+button a {
+    text-decoration: none;
+}
+center {
+  display: flex;
+  justify-content: center
+}
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.welcome {
+  margin-top: 10px;
+  font-family: monospace;
 }
 
 .box:nth-child(1),
@@ -40,22 +68,20 @@ html, body {
 }
 .eyedot{
 	background-color: #ecece7;
-    width: 100%;
-    height: 18%;
-    /*border-radius: 30px;*/
+  width: 100%;
+  height: 18%;
 }
 .eyeleg{
 	background-color: #FFCE85;
-    width: 100%;
-    height: 82%;
-    /*border-radius: 30px;*/
+  width: 100%;
+  height: 82%;
 }
 .eyeleg, .eyedot {
 	transition: opacity 0.55s ease;
 }
 .eyedot:hover {
-	background-color: red;
-	animation: redAnimation 3s forwards;
+	background-color: #FF9F13;
+	animation: redAnimation 100s forwards;
 }
 .box:nth-child(1):hover,
 .box:nth-child(2):hover,
@@ -63,8 +89,7 @@ html, body {
 .box:nth-child(5):hover,
 .box:nth-child(6):hover,
 .eyeleg:hover {
-  opacity: 0.8;
-  animation: opacityAnimation .7s forwards;
+  opacity: 0.7;
 }
 
 @keyframes opacityAnimation {
@@ -83,7 +108,7 @@ html, body {
     background-color: #ecece7;
   }
   50% {
-    background-color: red;
+    background-color: #FF9F13;
   }
   100% {
     background-color: white;
