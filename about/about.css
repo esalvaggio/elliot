@@ -1,7 +1,6 @@
-.text {
+.aboutText {
   font-family: monospace;
 }
-
 .title {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
